@@ -1,0 +1,44 @@
+package lecture1;
+
+/**
+ * Example class for testing
+ * 
+ * 
+ */
+
+public class MyMath {
+
+	/**
+	 * This method will return floored result of two floating numbers.
+	 * @param	a	The first floating number
+	 * @param	b	The second floating number
+	 * @return	floored sum of two floating number {@code a} and {@code b}
+	 */
+	public int sumAndFloor(double a, double b) {
+		return (int)(((a + 0.01f) + (b - 0.01f)+0.0000001));
+	}
+	
+	/**
+	 * This methods will perform {@code a}/{@code b}.
+	 * @param a numerator
+	 * @param b denominator
+	 * @return
+	 * @throws ArithmeticException
+	 */
+	public double divide(double a, double b) throws ArithmeticException {
+		if(b==0) {
+			throw new ArithmeticException();
+	}
+		return a/b;
+	}
+	
+	/**
+	 * Return sum of two integer {@code a} and {@code b}.
+	 * @param a The first integer value
+	 * @param b The second integer value
+	 * @return sum of two values
+	 */
+	public int add(int a, int b) {
+		return (a+b);
+	}
+}
